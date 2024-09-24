@@ -1,17 +1,17 @@
 import { Button } from "@nextui-org/button"
-import Container from "../../UI/Container"
 import Link from "next/link"
 import { Get_All_Item_Actions } from "@/src/Actions/Get_All_Item"
-import Card from "../../UI/Card"
 import { Post_Type } from "@/src/types/card"
+import Card from "@/src/components/UI/Card"
+import Container from "@/src/components/UI/Container"
+import { delay } from "@/src/utils/delay"
+
 
 
 const ItemsSection = async () => {
 
-
+    await delay(2000)
     const { data: items } = await Get_All_Item_Actions();
-
-
 
     return (
         <Container>

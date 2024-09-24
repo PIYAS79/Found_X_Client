@@ -1,7 +1,7 @@
 import { Navbar } from '@/src/components/UI/navbar'
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const layout = ({ children }: { children: ReactNode }) => {
     return (
         <div className="relative flex flex-col h-screen">
             <Navbar />

@@ -19,6 +19,7 @@ const Card = ({ post }: { post: Post_Type }) => {
             </CardHeader>
 
             <Image
+                isZoomed={true}
                 removeWrapper
                 alt="Card example background"
                 className="scale-120 z-0 h-full w-full -translate-y-6 object-cover"
